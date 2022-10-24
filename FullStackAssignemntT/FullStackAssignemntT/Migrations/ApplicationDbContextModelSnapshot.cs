@@ -72,6 +72,9 @@ namespace FullStackAssignemntT.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("SizeId")
+                        .HasColumnType("int");
+
                     b.Property<int>("Stock")
                         .HasColumnType("int");
 
@@ -82,6 +85,23 @@ namespace FullStackAssignemntT.Migrations
                     b.ToTable("ShopProducts");
                 });
 
+            modelBuilder.Entity("FullStackAssignemntT.Models.Size", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ShopSize");
+                });
+
             modelBuilder.Entity("FullStackAssignemntT.Models.Product", b =>
                 {
                     b.HasOne("FullStackAssignemntT.Models.Category", "Category")
@@ -90,7 +110,15 @@ namespace FullStackAssignemntT.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("FullStackAssignemntT.Models.Size", "Size")
+                        .WithMany()
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Category");
+
+                    b.Navigation("Size");
                 });
 #pragma warning restore 612, 618
         }

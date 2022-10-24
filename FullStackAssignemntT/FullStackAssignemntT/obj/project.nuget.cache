@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z2kCyrQEF4DnG4RiCbSl9amidfcUmge/XZO0HhBSTS09AUegwI5T8D8kygbO+GQEYH74qrSsS7zzopB6r/Fi/Q==",
+  "dgSpecHash": "ipHYlOSdbe9esCwrhhHcyHjdQtYvhXwEOf67meTeQwuRCRNjUeYcGZSpOfuSdLAaXROMdFlXuwlFDqYJcq25yQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tatja\\OneDrive\\Desktop\\Tatiana Assignment FS\\FullStackAssignemntT\\FullStackAssignemntT\\FullStackAssignemntT.csproj",
+  "projectFilePath": "C:\\Users\\tatja\\OneDrive\\Desktop\\Tatiana Assignment FS\\Assignment-Shopping-Part\\FullStackAssignemntT\\FullStackAssignemntT\\FullStackAssignemntT.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tatja\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\tatja\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

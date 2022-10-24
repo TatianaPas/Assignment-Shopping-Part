@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FullStackAssignemntT.Models
@@ -19,12 +20,21 @@ namespace FullStackAssignemntT.Models
         public string SKU { get; set; }
         [Required]
         [Range(1, 1000)]
+        [Display(Name = "List Price")]
         public double ListPrice { get; set; }
+        [Display(Name = "Image")]
         public string ImageUrl { get; set; }
         //navigation property
         [Required]
+        [Display(Name = "Category")]
         public int CategoryId { get; set; }
         [ForeignKey("CategoryId")]
+        [ValidateNever]
         public Category Category { get; set; }
+        [Display(Name="Size")]
+        public int SizeId { get; set; }
+        [ForeignKey("SizeId")]
+        [ValidateNever]
+        public Size Size { get; set; }
     }
 }
