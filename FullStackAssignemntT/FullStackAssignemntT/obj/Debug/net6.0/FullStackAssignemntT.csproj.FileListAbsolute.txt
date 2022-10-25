@@ -526,3 +526,13 @@ C:\Users\tatja\OneDrive\Desktop\Tatiana Assignment FS\Assignment-Shopping-Part\F
 C:\Users\tatja\OneDrive\Desktop\Tatiana Assignment FS\Assignment-Shopping-Part\FullStackAssignemntT\FullStackAssignemntT\obj\Debug\net6.0\FullStackAssignemntT.pdb
 C:\Users\tatja\OneDrive\Desktop\Tatiana Assignment FS\Assignment-Shopping-Part\FullStackAssignemntT\FullStackAssignemntT\obj\Debug\net6.0\FullStackAssignemntT.genruntimeconfig.cache
 C:\Users\tatja\OneDrive\Desktop\Tatiana Assignment FS\Assignment-Shopping-Part\FullStackAssignemntT\FullStackAssignemntT\obj\Debug\net6.0\ref\FullStackAssignemntT.dll
+C:\Users\tatja\OneDrive\Desktop\Tatiana Assignment FS\Assignment-Shopping-Part\FullStackAssignemntT\FullStackAssignemntT\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\tatja\OneDrive\Desktop\Tatiana Assignment FS\Assignment-Shopping-Part\FullStackAssignemntT\FullStackAssignemntT\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\tatja\OneDrive\Desktop\Tatiana Assignment FS\Assignment-Shopping-Part\FullStackAssignemntT\FullStackAssignemntT\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\tatja\OneDrive\Desktop\Tatiana Assignment FS\Assignment-Shopping-Part\FullStackAssignemntT\FullStackAssignemntT\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\tatja\OneDrive\Desktop\Tatiana Assignment FS\Assignment-Shopping-Part\FullStackAssignemntT\FullStackAssignemntT\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\tatja\OneDrive\Desktop\Tatiana Assignment FS\Assignment-Shopping-Part\FullStackAssignemntT\FullStackAssignemntT\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\tatja\OneDrive\Desktop\Tatiana Assignment FS\Assignment-Shopping-Part\FullStackAssignemntT\FullStackAssignemntT\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\tatja\OneDrive\Desktop\Tatiana Assignment FS\Assignment-Shopping-Part\FullStackAssignemntT\FullStackAssignemntT\obj\Debug\net6.0\FullStackAssignemntT.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\tatja\OneDrive\Desktop\Tatiana Assignment FS\Assignment-Shopping-Part\FullStackAssignemntT\FullStackAssignemntT\bin\Debug\net6.0\Assignment.Utility.dll
+C:\Users\tatja\OneDrive\Desktop\Tatiana Assignment FS\Assignment-Shopping-Part\FullStackAssignemntT\FullStackAssignemntT\bin\Debug\net6.0\Assignment.Utility.pdb

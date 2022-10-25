@@ -1,9 +1,11 @@
 ﻿using FullStackAssignemntT.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace FullStackAssignemntT.Data
 {
-    public class ApplicationDbContext:DbContext
+    // 26.10 exted to use as Identity 
+    public class ApplicationDbContext:IdentityDbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options): base(options)
         {
