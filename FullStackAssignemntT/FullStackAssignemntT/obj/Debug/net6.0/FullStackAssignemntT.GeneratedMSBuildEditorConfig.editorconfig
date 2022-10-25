@@ -35,12 +35,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/tatja/OneDrive/Desktop/Tatiana Assignment FS/Assignment-Shopping-Part/FullStackAssignemntT/FullStackAssignemntT/Views/Home/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/tatja/OneDrive/Desktop/Tatiana Assignment FS/Assignment-Shopping-Part/FullStackAssignemntT/FullStackAssignemntT/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/tatja/OneDrive/Desktop/Tatiana Assignment FS/Assignment-Shopping-Part/FullStackAssignemntT/FullStackAssignemntT/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tatja/OneDrive/Desktop/Tatiana Assignment FS/Assignment-Shopping-Part/FullStackAssignemntT/FullStackAssignemntT/Views/Home/Shop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG9wLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/tatja/OneDrive/Desktop/Tatiana Assignment FS/Assignment-Shopping-Part/FullStackAssignemntT/FullStackAssignemntT/Views/ProductsTemp/Create.cshtml]
