@@ -14,5 +14,7 @@ namespace FullStackAssignemntT.Data
         public DbSet<Category> ShopCategories { get; set; }
         public DbSet<Product> ShopProducts { get; set; }
         public DbSet<Size> ShopSize { get; set; }
+        public DbSet<ApplicationUser> ShopApplicationUsers { get; set; }
+        public DbSet<ShoppingCart> ShopShoppingCart { get; set; }
     }
 }

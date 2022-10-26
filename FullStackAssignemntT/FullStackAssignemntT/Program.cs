@@ -17,6 +17,16 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(options => options.Sign
     .AddEntityFrameworkStores<ApplicationDbContext>();
 // razor pages for identity
 builder.Services.AddRazorPages();
+//set routs for login, logout and access denied
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = $"/Identity/Account/Login";
+    options.LogoutPath = $"/Identity/Account/Logout";
+    options.AccessDeniedPath = $"/Identity/Account/AccessDenied";
+
+});
+
+
 //add email sender option for registration with custom roles
 builder.Services.AddSingleton<IEmailSender,EmailSender>();
 

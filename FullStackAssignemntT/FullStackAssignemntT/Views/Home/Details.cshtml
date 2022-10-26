@@ -5,6 +5,8 @@
 @model ShoppingCart
 
 <form method="post">
+    @*26.10 Tatiana send product id if user wants to add it to cart*@
+    <input hidden asp-for="Product.Id" />
         <div class="card  container pt-4 pb-4">
             <div class="card-header bg-primary text-light ml-0  row ">
                 <div class="col-12 col-md-6">
