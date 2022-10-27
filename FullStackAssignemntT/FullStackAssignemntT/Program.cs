@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Assignment.Utility;
+using Stripe;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("DefaultConnection")));
 
+//27.10 Tatiana configure payment Stripe settings class to retrieve Stripe keys from appsettings
+builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Stripe"));
 //add roles to identity
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true).AddDefaultTokenProviders()
     .AddEntityFrameworkStores<ApplicationDbContext>();
@@ -45,6 +48,11 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+//27.10 Tatiana assign Stripe key to Stripe
+StripeConfiguration.ApiKey = builder.Configuration.GetSection("Stripe:SecretKey").Get<string>();
+
+
 app.UseAuthentication();;
 
 app.UseAuthorization();
