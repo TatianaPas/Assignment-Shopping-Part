@@ -536,3 +536,4 @@ C:\Users\tatja\OneDrive\Desktop\Tatiana Assignment FS\Assignment-Shopping-Part\F
 C:\Users\tatja\OneDrive\Desktop\Tatiana Assignment FS\Assignment-Shopping-Part\FullStackAssignemntT\FullStackAssignemntT\obj\Debug\net6.0\FullStackAssignemntT.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\tatja\OneDrive\Desktop\Tatiana Assignment FS\Assignment-Shopping-Part\FullStackAssignemntT\FullStackAssignemntT\bin\Debug\net6.0\Assignment.Utility.dll
 C:\Users\tatja\OneDrive\Desktop\Tatiana Assignment FS\Assignment-Shopping-Part\FullStackAssignemntT\FullStackAssignemntT\bin\Debug\net6.0\Assignment.Utility.pdb
+C:\Users\tatja\OneDrive\Desktop\Tatiana Assignment FS\Assignment-Shopping-Part\FullStackAssignemntT\FullStackAssignemntT\bin\Debug\net6.0\Stripe.net.dll

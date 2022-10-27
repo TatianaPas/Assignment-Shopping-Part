@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UX1AnKUG7SUsHemQH2VvKWeKM/RWU3C66urjYXUi+LI=",
+  "Hash": "u0lhKTuaoSUJuup4Gyn5joiZUk4SJgUq7rsqeOZLg1o=",
   "Source": "FullStackAssignemntT",
   "BasePath": "_content/FullStackAssignemntT",
   "Mode": "Default",
@@ -1392,6 +1392,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\products\\dbe579c4-6030-4616-b4a8-bc92415eab29.JPG"
+    },
+    {
+      "Identity": "C:\\Users\\tatja\\OneDrive\\Desktop\\Tatiana Assignment FS\\Assignment-Shopping-Part\\FullStackAssignemntT\\FullStackAssignemntT\\wwwroot\\images\\thankyou1.png",
+      "SourceId": "FullStackAssignemntT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tatja\\OneDrive\\Desktop\\Tatiana Assignment FS\\Assignment-Shopping-Part\\FullStackAssignemntT\\FullStackAssignemntT\\wwwroot\\",
+      "BasePath": "_content/FullStackAssignemntT",
+      "RelativePath": "images/thankyou1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\thankyou1.png"
     },
     {
       "Identity": "C:\\Users\\tatja\\OneDrive\\Desktop\\Tatiana Assignment FS\\Assignment-Shopping-Part\\FullStackAssignemntT\\FullStackAssignemntT\\wwwroot\\js\\product.js",
