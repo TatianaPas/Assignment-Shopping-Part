@@ -1,0 +1,77 @@
+﻿@*
+    01.11.2022 Tatiana
+*@
+
+@{
+    //create variables to toggle sorting by status order
+    var status = Context.Request.Query["status"];
+    var all = "text-primary";
+    var approoved = "text-primary";
+    var inprocess = "text-primary";
+    var completed = "text-primary";
+
+    switch (status)
+    {
+            case "inprocess":
+            inprocess = "active text-white";
+            break;
+            case "approoved":
+            approoved = "active text-white";
+            break;
+            case "completed":
+            completed = "active text-white";
+            break;
+            default:
+            all = "active text-white";
+            break;
+    }
+}
+
+
+
+<div class="container p-3 mb-5">
+    <div class="d-flex justify-content-between pt-4">
+        <div class="p-2">
+            <h2 class="text-primary">Orders</h2>
+		</div>
+        <div class="p-2">
+            <ul class="list-group group list-group-horizontal-sm">
+                <a style="text-decoration:none" asp-controller="Order" asp-action="Index" asp-route-status="approoved">
+                    @*assign variables to buttons*@
+                    <li class="list-group-item @approoved">Approoved</li>
+                </a>
+                <a style="text-decoration:none" asp-controller="Order" asp-action="Index" asp-route-status="inprocess">
+                    <li class="list-group-item @inprocess"> In Process</li>
+                </a>
+                 <a style="text-decoration:none" asp-controller="Order" asp-action="Index" asp-route-status="completed">
+                    <li class="list-group-item @completed"> Completed</li>
+                </a>
+                 <a style="text-decoration:none" asp-controller="Order" asp-action="Index" asp-route-status="all">
+                    <li class="list-group-item @all"> All Orders</li>
+                </a>
+                 
+            </ul>
+        </div>
+
+	</div>
+    <br /><br />
+
+<table id="productTable" class="table table-bordered table-striped" style="width:100%">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>Total</th>
+            <th></th>
+		</tr>
+	</thead>
+</table>
+</div>
+
+@*01.11 Tatiana - load orders data into data tables using script*@
+@section Scripts{
+    <script src = "~/js/order.js"></script>
+}

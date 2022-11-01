@@ -2,17 +2,56 @@ html {
   font-size: 14px;
 }
 
+
+.headerMain {
+    min-height: 70vh;
+    width: 100%;
+    background-image: url('../images/background1.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header-text {
+    width: 90%;
+    color: black;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.about {
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
+
+
+    html {
+        position: relative;
+        min-height: 100%;
+    }
+
+    body {
+        margin-bottom: 60px;
+    }
+}
+@media(max-width:1000px) {
+    .header-text img {
+        width: 80%;
+    }
+
+    .headerMain {
+        background-image: url('../images/background_mobile.png');
+    }
 }
 
-html {
-  position: relative;
-  min-height: 100%;
-}
+    
 
-body {
-  margin-bottom: 60px;
-}
