@@ -37,7 +37,9 @@ namespace FullStackAssignemntT.Controllers
                 OrderHeader = _context.ShopOrderHeaders
                 .Include(p => p.ApplicationUser)
                 .FirstOrDefaultAsync(u => u.Id == orderId).GetAwaiter().GetResult(),
-                OrderDetails = await _context.ShopOrderDetails.Where(u => u.OrderId == orderId).ToListAsync()
+                OrderDetails = await _context.ShopOrderDetails
+                .Include(i=>i.Product)
+                .Where(u => u.OrderId == orderId).ToListAsync()
             };
             return View(OrderVM);
         }
