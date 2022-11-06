@@ -94,6 +94,12 @@ namespace FullStackAssignemntT.Controllers
             //27.10 Tatiana  - calculate cart total
             foreach (var cartItem in ShoppingCartVM.CartList)
             {
+                //06.11 Tatiana check if count of item not more than stock, tehn set it to maximum stock
+                if(cartItem.Count > cartItem.Product.Stock)
+                {
+                    cartItem.Count = cartItem.Product.Stock;
+                }
+               
                 ShoppingCartVM.OrderHeader.OrderTotal += (cartItem.Product.ListPrice * cartItem.Count);
             }
 
@@ -169,7 +175,7 @@ namespace FullStackAssignemntT.Controllers
         //27.10 Tatiana  - check if payment is sucessfull from stripe card pauyment
         public async Task<IActionResult> OrderConfirmation(int id)
         {
-            OrderHeader orderHeader = await _context.ShopOrderHeaders.FirstOrDefaultAsync(s=>s.Id == id);
+            OrderHeader orderHeader = await _context.ShopOrderHeaders.FirstOrDefaultAsync(s=>s.Id == id);            
             var service = new SessionService();
             Session session = service.Get(orderHeader.SessionId);
             //check Stripe status
@@ -178,9 +184,19 @@ namespace FullStackAssignemntT.Controllers
                 orderHeader.PaymentIntentId = session.PaymentIntentId;
                 orderHeader.OrderStatus = StaticDetails.StatusApproved;
                 orderHeader.PaymentStatus = StaticDetails.PaymentStatusApproved;
+
                 _context.SaveChanges();
             }
-            List<ShoppingCart> shoppicCart = _context.ShopShoppingCart.Where(u => u.ApplicationUserId == orderHeader.ApplicationUserId).ToList();
+            List<ShoppingCart> shoppicCart = _context.ShopShoppingCart
+                .Where(u => u.ApplicationUserId == orderHeader.ApplicationUserId).ToList();
+
+            //06.11 Tatiana decrease product stock by the count of products sold
+            foreach (var item in shoppicCart)
+            {
+                Product product = _context.ShopProducts.Where(p => p.Id == item.ProductId).FirstOrDefault();
+                product.Stock = (item.Product.Stock - item.Count);
+            }
+
             _context.RemoveRange(shoppicCart);
             _context.SaveChanges();
             return View(id);

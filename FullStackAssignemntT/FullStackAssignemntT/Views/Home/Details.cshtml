@@ -4,18 +4,17 @@
 
 @model ShoppingCart
 
-<form method="post">
+<form method="post" class="mb-5">
     @*26.10 Tatiana send product id if user wants to add it to cart*@
     <input hidden asp-for="Product.Id" />
-        <div class="card  container pt-4 pb-4">
+        <div class="card  container pt-4 pb-4 mb-5">
             <div class="card-header bg-primary text-light ml-0  row ">
-                <div class="col-12 col-md-6">
+                <div class="col-12">
                     <h1 class="text-white">@Model.Product.Name</h1>
                     <p class="text-warning">@Model.Product.Color</p>
                 </div>
-                <div class="col-12 col-md-6 text-end pt-4">
-                    <span class="badge bg-secondary pt-2" style="height:30px;">@Model.Product.Category.Name</span>
-                </div>
+                
+                
             </div>
             <div class="card-body row container">
                 <div class="container rounded p-2">
@@ -23,10 +22,8 @@
                         <div class="col-12 col-lg-3">
                             <img src="@Model.Product.ImageUrl" width="100%" class="rounded" />
                         </div>
-                        <div class="col-8 col-lg-8">
+                        <div class="col md-12 col-lg-8 mt-2">
 
-
-                            
                             <div class="row pl-2">
                                 <h5 class="text-danger pb-2">Price: @Model.Product.ListPrice.ToString("c")</h5>
                             </div>
@@ -42,11 +39,21 @@
                             </div>
                             <div class="row pl-2 pb-5">
                                 <div class="col-6 col-md-3 text-primary"><h4>Quantity</h4></div>
+
                                 <div class="col-4 col-md-2"><input asp-for = "Count" class="form-control"  /></div>
+                                
                             </div>
                             <div class="row pl-2">
                                 <p class="text-muted">SKU : @Model.Product.SKU</p>
                             </div>
+                            @if(Model.Product.Stock==1)
+                        {
+                            <div class="row pl-2">
+                                <p class="text-danger">The last item</p>
+                            </div>
+                        }
+                        
+                           
                         </div>
                         
                     </div>
@@ -55,11 +62,25 @@
             <div class="card-footer">
                 <div class="row">
                     <div class="col-12 col-md-6 pb-1">
-                        <a class="btn btn-success form-control " asp-action="Shop" style="height:50px;">Back to Shop</a>
+                        <a class="btn btn-outline-secondary form-control " asp-action="Shop" style="height:50px;">Back to Shop</a>
                     </div>
+
+                    
+
+                    @if(Model.Product.Stock>0)
+                {
                     <div class="col-12 col-md-6 pb-1">
                         <button type="submit" value="Add to Cart" class="btn btn-primary form-control" style="height:50px;">Add to Cart</button>
                     </div>
+                }
+                else
+                {
+                    <div class="col-12 col-md-6 pb-1 text-center">
+                        <p class="text-danger"> Out of Stock</p>
+                    </div>
+                    
+                }
+
                 </div>
             </div>
         </div>

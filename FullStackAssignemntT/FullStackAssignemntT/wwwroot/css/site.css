@@ -28,9 +28,17 @@ html {
     padding-bottom: 30px;
 }
 
+
 @media (min-width: 768px) {
     html {
         font-size: 16px;
+    }
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
 
@@ -42,6 +50,9 @@ html {
     body {
         margin-bottom: 60px;
     }
+
+    
+
 }
 @media(max-width:1000px) {
     .header-text img {
@@ -51,6 +62,16 @@ html {
     .headerMain {
         background-image: url('../images/background_mobile.png');
     }
+    .thankYouImage {
+        width: 50%;
+    }
+    /*footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }*/
 }
 
     

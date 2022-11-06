@@ -78,11 +78,19 @@ namespace FullStackAssignemntT.Controllers
 
             if (cartFromDb == null)
             {
+                //06.11 Tatiana Check if amout of items more than Stock, replase count with maximum stock
+                if (shoppingCart.Count> shoppingCart.Product.Stock)
+                {
+                    shoppingCart.Count = shoppingCart.Product.Stock;
+                }
                 await _context.ShopShoppingCart.AddAsync(shoppingCart);
             }
             else
-            {
-                shoppingCart.IncrementCount(cartFromDb, shoppingCart.Count);
+            {// 06.11 Tatiana Check if amout of items less than stock, then increase count
+                if (shoppingCart.Count < shoppingCart.Product.Stock)
+                {
+                    shoppingCart.IncrementCount(cartFromDb, shoppingCart.Count);
+                }                    
             }
 
             shoppingCart.Product = await _context.ShopProducts
