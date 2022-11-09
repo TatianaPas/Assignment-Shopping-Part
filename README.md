@@ -28,3 +28,6 @@ ADMIN- ORDER DETAILS
 ![image](https://user-images.githubusercontent.com/81549043/200728857-577aebec-3acb-4c28-8bd5-a06498f1030e.png)
 ADMIN- ORDER SHIPPED
 ![image](https://user-images.githubusercontent.com/81549043/200728977-2a8275b9-14e7-4465-8f1d-073263782551.png)
+DATABASE DESIGN
+
+![image](https://user-images.githubusercontent.com/81549043/200746845-4e0f2887-ebd7-4e8a-b4e3-b720ae0f8aad.png)
