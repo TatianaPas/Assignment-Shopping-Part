@@ -4,6 +4,10 @@ Web application based on a real business, and all Shop information including pic
 For my part I did not implement identity management, this part belongs to another student.
 To create my project I referred to the Udemy course https://www.udemy.com/course/complete-aspnet-core-21-course/
 
+AZURE link.
+https://fullstacktatiana.azurewebsites.net/
+
+
 HOME.
 ![image](https://user-images.githubusercontent.com/81549043/200728095-cbae01e8-5770-4b99-a95b-c0132ba9e452.png)
 
