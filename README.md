@@ -1,5 +1,5 @@
 This is a Full Stack assignment project using ASP.Net 6, Entity Framework, and SqlServer.
-My part is to shop how Cart and Order management works. 
+My part is to show how Cart and Order management works. 
 Web application based on a real business, and all Shop information including pictures has copyright to Esther and Albie's business.
 For my part I did not implement identity management, this part belongs to another student.
 To create my project I referred to the Udemy course https://www.udemy.com/course/complete-aspnet-core-21-course/
